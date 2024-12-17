@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#96F29A">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile Information"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingBottom="6dp"
+            android:textColor="#0F0E0E" />
+
+        <!-- Pet Name Field -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pet Name:"
+                android:textSize="14sp"
+                android:layout_marginEnd="8dp"
+                android:textColor="#0F0E0E"
+                android:gravity="start|center_vertical" />
+
+            <EditText
+                android:id="@+id/editPetName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:enabled="false"
+                android:hint="Enter Pet Name"
+                android:padding="10dp"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <!-- Species Field -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Species:"
+                android:textSize="14sp"
+                android:layout_marginEnd="8dp"
+                android:textColor="#0F0E0E"
+                android:gravity="start|center_vertical" />
+
+            <EditText
+                android:id="@+id/editSpecies"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:enabled="false"
+                android:hint="Enter Species"
+                android:padding="10dp"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <!-- Gender Field -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender:"
+                android:textSize="14sp"
+                android:layout_marginEnd="8dp"
+                android:textColor="#0F0E0E"
+                android:gravity="start|center_vertical" />
+
+            <EditText
+                android:id="@+id/editGender"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Enter Gender"
+                android:background="@drawable/border"
+                android:padding="10dp"
+                android:focusable="false"
+                android:enabled="false" />
+        </LinearLayout>
+
+        <!-- Birth Date Field -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Birth Date:"
+                android:textSize="14sp"
+                android:layout_marginEnd="8dp"
+                android:textColor="#0F0E0E"
+                android:gravity="start|center_vertical" />
+
+            <EditText
+                android:id="@+id/editBirth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Enter Birth Date"
+                android:background="@drawable/border"
+                android:padding="10dp"
+                android:enabled="false" />
+        </LinearLayout>
+
+        <!-- Weight Field -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weight:"
+                android:textSize="14sp"
+                android:layout_marginEnd="8dp"
+                android:textColor="#0F0E0E"
+                android:gravity="start|center_vertical" />
+
+            <EditText
+                android:id="@+id/editWeight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:enabled="false"
+                android:hint="Enter Weight"
+                android:padding="10dp"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <!-- Habitat Field -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Habitat:"
+                android:textSize="14sp"
+                android:layout_marginEnd="8dp"
+                android:textColor="#0F0E0E"
+                android:gravity="start|center_vertical" />
+
+            <EditText
+                android:id="@+id/editHabitat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Enter Habitat"
+                android:background="@drawable/border"
+                android:padding="10dp"
+                android:focusable="false"
+                android:enabled="false" />
+        </LinearLayout>
+
+        <!-- Sterilization Status Field -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sterilization Status:"
+                android:textSize="14sp"
+                android:layout_marginEnd="8dp"
+                android:textColor="#0F0E0E"
+                android:gravity="start|center_vertical" />
+
+            <EditText
+                android:id="@+id/editSterilize"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:enabled="false"
+                android:focusable="false"
+                android:hint="Enter Sterilization Status"
+                android:padding="10dp"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <!-- Buttons Section -->
+        <Button
+            android:id="@+id/btnEditProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnDeleteProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:backgroundTint="#F44336"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="8dp"
+            tools:ignore="VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/btnLogOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log Out"
+            android:backgroundTint="#5F6FC1"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>

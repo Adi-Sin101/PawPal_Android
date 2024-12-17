@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_profile"
+        android:title="Profile"
+        android:icon="@drawable/baseline_pets_24" />
+    <item
+        android:id="@+id/nav_task"
+        android:title="Add task"
+        android:icon="@drawable/baseline_add_task_24" />
+    <item
+        android:id="@+id/nav_expense"
+        android:title="Expense"
+        android:icon="@drawable/baseline_shopping_bag_24" />
+    <item
+        android:id="@+id/nav_vet"
+        android:title="Vet care"
+        android:icon="@drawable/baseline_medical_information_24" />
+
+</menu>

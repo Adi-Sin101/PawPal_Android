@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Make_Profile">
+
+    <!-- Wrapping the content inside a ScrollView -->
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btn_save_profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="#B8F2A0"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+            <!-- Section for Pet's Name -->
+            <TextView
+                android:id="@+id/txt_petName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pet's Name"
+                android:textColor="#4CAF50"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/border"
+                android:padding="8dp"
+                android:paddingStart="16dp"/>
+
+            <EditText
+                android:id="@+id/edit_petName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your pet's name"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:background="@drawable/border"
+                android:textColor="#000000"
+                android:textColorHint="#000000" />
+
+            <!-- Section for Species -->
+            <TextView
+                android:id="@+id/txt_Species"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Species"
+                android:textColor="#4CAF50"
+                android:textSize="16sp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/border"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/edit_Species"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your pet's species"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:background="@drawable/border"
+                android:textColor="#000000"
+                android:textColorHint="#000000" />
+
+            <!-- Section for Gender -->
+            <TextView
+                android:id="@+id/txt_Gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:textColor="#4CAF50"
+                android:textSize="16sp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/border"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/edit_Gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your pet's gender"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:background="@drawable/border"
+                android:textColor="#000000"
+                android:textColorHint="#000000" />
+
+            <!-- Section for Date of Birth -->
+            <TextView
+                android:id="@+id/txt_Birth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date of Birth"
+                android:textColor="#4CAF50"
+                android:textSize="16sp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/border"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/edit_Birth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your pet's date of birth"
+                android:inputType="date"
+                android:minHeight="48dp"
+                android:background="@drawable/border"
+                android:textColor="#000000"
+                android:textColorHint="#000000" />
+
+            <!-- Section for Weight -->
+            <TextView
+                android:id="@+id/txt_Weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weight (kg)"
+                android:textColor="#4CAF50"
+                android:textSize="16sp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/border"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/edit_Weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your pet's weight"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp"
+                android:background="@drawable/border"
+                android:textColor="#000000"
+                android:textColorHint="#000000" />
+
+            <!-- Section for Habitat -->
+            <TextView
+                android:id="@+id/txt_Habitat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Habitat"
+                android:textColor="#4CAF50"
+                android:textSize="16sp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/border"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/edit_Habitat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your pet's habitat"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:background="@drawable/border"
+                android:textColor="#000000"
+                android:textColorHint="#000000" />
+
+            <!-- Section for Sterilization -->
+            <TextView
+                android:id="@+id/txt_Sterilize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sterilized (Yes/No)"
+                android:textColor="#4CAF50"
+                android:textSize="16sp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/border"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/edit_Sterilize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Is your pet sterilized?"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:background="@drawable/border"
+                android:textColor="#000000"
+                android:textColorHint="#000000" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Save Profile Button -->
+    <Button
+        android:id="@+id/btn_save_profile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Save Profile"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="#4CAF50" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
